@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		109253AF196304DF00C4AEFD /* Business.m in Sources */ = {isa = PBXBuildFile; fileRef = 109253AE196304DF00C4AEFD /* Business.m */; };
+		109253B21963075E00C4AEFD /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 109253B11963075E00C4AEFD /* Product.m */; };
 		10BB03EC1961E5C2007E427A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BB03EB1961E5C2007E427A /* Foundation.framework */; };
 		10BB03EE1961E5C2007E427A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BB03ED1961E5C2007E427A /* CoreGraphics.framework */; };
 		10BB03F01961E5C2007E427A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BB03EF1961E5C2007E427A /* UIKit.framework */; };
@@ -22,6 +24,8 @@
 		10BB04101961E5C2007E427A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BB03EF1961E5C2007E427A /* UIKit.framework */; };
 		10BB04181961E5C2007E427A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 10BB04161961E5C2007E427A /* InfoPlist.strings */; };
 		10BB041A1961E5C2007E427A /* CatalogoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BB04191961E5C2007E427A /* CatalogoTests.m */; };
+		10BB042A1961E85B007E427A /* BusinessVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BB04291961E85B007E427A /* BusinessVC.m */; };
+		10BB042D1961E87E007E427A /* ProductVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BB042C1961E87E007E427A /* ProductVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		109253AD196304DF00C4AEFD /* Business.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Business.h; sourceTree = "<group>"; };
+		109253AE196304DF00C4AEFD /* Business.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Business.m; sourceTree = "<group>"; };
+		109253B01963075E00C4AEFD /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		109253B11963075E00C4AEFD /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
 		10BB03E81961E5C2007E427A /* Catalogo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Catalogo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10BB03EB1961E5C2007E427A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		10BB03ED1961E5C2007E427A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,6 +63,10 @@
 		10BB04151961E5C2007E427A /* CatalogoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CatalogoTests-Info.plist"; sourceTree = "<group>"; };
 		10BB04171961E5C2007E427A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		10BB04191961E5C2007E427A /* CatalogoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatalogoTests.m; sourceTree = "<group>"; };
+		10BB04281961E85B007E427A /* BusinessVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessVC.h; sourceTree = "<group>"; };
+		10BB04291961E85B007E427A /* BusinessVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessVC.m; sourceTree = "<group>"; };
+		10BB042B1961E87E007E427A /* ProductVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductVC.h; sourceTree = "<group>"; };
+		10BB042C1961E87E007E427A /* ProductVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +126,8 @@
 		10BB03F11961E5C2007E427A /* Catalogo */ = {
 			isa = PBXGroup;
 			children = (
+				10BB04241961E80C007E427A /* Business */,
+				10BB04231961E7CD007E427A /* Product */,
 				10BB03FA1961E5C2007E427A /* AppDelegate.h */,
 				10BB03FB1961E5C2007E427A /* AppDelegate.m */,
 				10BB03FD1961E5C2007E427A /* Main_iPhone.storyboard */,
@@ -153,6 +167,28 @@
 				10BB04161961E5C2007E427A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		10BB04231961E7CD007E427A /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				109253B01963075E00C4AEFD /* Product.h */,
+				109253B11963075E00C4AEFD /* Product.m */,
+				10BB042B1961E87E007E427A /* ProductVC.h */,
+				10BB042C1961E87E007E427A /* ProductVC.m */,
+			);
+			name = Product;
+			sourceTree = "<group>";
+		};
+		10BB04241961E80C007E427A /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				109253AD196304DF00C4AEFD /* Business.h */,
+				109253AE196304DF00C4AEFD /* Business.m */,
+				10BB04281961E85B007E427A /* BusinessVC.h */,
+				10BB04291961E85B007E427A /* BusinessVC.m */,
+			);
+			name = Business;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,7 +289,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				109253B21963075E00C4AEFD /* Product.m in Sources */,
+				10BB042A1961E85B007E427A /* BusinessVC.m in Sources */,
+				10BB042D1961E87E007E427A /* ProductVC.m in Sources */,
 				10BB04051961E5C2007E427A /* ViewController.m in Sources */,
+				109253AF196304DF00C4AEFD /* Business.m in Sources */,
 				10BB03FC1961E5C2007E427A /* AppDelegate.m in Sources */,
 				10BB03F81961E5C2007E427A /* main.m in Sources */,
 			);
@@ -470,6 +510,7 @@
 				10BB041F1961E5C2007E427A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		10BB04201961E5C2007E427A /* Build configuration list for PBXNativeTarget "CatalogoTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +519,7 @@
 				10BB04221961E5C2007E427A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
