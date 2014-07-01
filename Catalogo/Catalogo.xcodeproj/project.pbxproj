@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		109253AF196304DF00C4AEFD /* Business.m in Sources */ = {isa = PBXBuildFile; fileRef = 109253AE196304DF00C4AEFD /* Business.m */; };
 		109253B21963075E00C4AEFD /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 109253B11963075E00C4AEFD /* Product.m */; };
+		10AE1C8519633A2E00B4C209 /* ropa.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AE1C8419633A2E00B4C209 /* ropa.png */; };
 		10BB03EC1961E5C2007E427A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BB03EB1961E5C2007E427A /* Foundation.framework */; };
 		10BB03EE1961E5C2007E427A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BB03ED1961E5C2007E427A /* CoreGraphics.framework */; };
 		10BB03F01961E5C2007E427A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BB03EF1961E5C2007E427A /* UIKit.framework */; };
@@ -43,6 +44,7 @@
 		109253AE196304DF00C4AEFD /* Business.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Business.m; sourceTree = "<group>"; };
 		109253B01963075E00C4AEFD /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
 		109253B11963075E00C4AEFD /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		10AE1C8419633A2E00B4C209 /* ropa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ropa.png; sourceTree = "<group>"; };
 		10BB03E81961E5C2007E427A /* Catalogo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Catalogo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10BB03EB1961E5C2007E427A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		10BB03ED1961E5C2007E427A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -93,6 +95,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10AE1C83196339FF00B4C209 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				10AE1C8419633A2E00B4C209 /* ropa.png */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
 		10BB03DF1961E5C2007E427A = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +136,7 @@
 		10BB03F11961E5C2007E427A /* Catalogo */ = {
 			isa = PBXGroup;
 			children = (
+				10AE1C83196339FF00B4C209 /* image */,
 				10BB04241961E80C007E427A /* Business */,
 				10BB04231961E7CD007E427A /* Product */,
 				10BB03FA1961E5C2007E427A /* AppDelegate.h */,
@@ -268,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10BB04021961E5C2007E427A /* Main_iPad.storyboard in Resources */,
+				10AE1C8519633A2E00B4C209 /* ropa.png in Resources */,
 				10BB04071961E5C2007E427A /* Images.xcassets in Resources */,
 				10BB03FF1961E5C2007E427A /* Main_iPhone.storyboard in Resources */,
 				10BB03F61961E5C2007E427A /* InfoPlist.strings in Resources */,
