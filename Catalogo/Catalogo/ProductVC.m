@@ -7,6 +7,7 @@
 //
 
 #import "ProductVC.h"
+#import "Product.h"
 
 @implementation ProductVC
 
@@ -23,6 +24,15 @@
 }
 //////////////////////////////////////////////////////////////////////
 
+-(void)addProduct:(int) id_Product name:(NSString*) name description:(NSString*)description price:(int) price{
+    
+}
+-(void)deleteProduct:(int) id_Product{
+    
+}
+-(void)modifyProduct:(int) id_Product name:(NSString*) name description:(NSString*)description price:(int) price{
+    
+}
 
 
 @end
