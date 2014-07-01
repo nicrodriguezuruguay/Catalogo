@@ -33,7 +33,7 @@
     new_product.description=description;
     new_product.price = price;
     
-    
+    [listProduct addObject:new_product];
     
     
 }
