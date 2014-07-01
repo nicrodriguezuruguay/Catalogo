@@ -13,9 +13,10 @@
 ////////////////////////////SINGLETON//////////////////////////////////
 +(ProductVC *) getInstance;
 //////////////////////////////////////////////////////////////////////
+@property (nonatomic,strong) NSMutableArray * listProduct;
 
 
--(void)addProduct:(int) id_Product name:(NSString*) name description:(NSString*)description price:(int) price;
+-(void)addProduct:(NSString*) name description:(NSString*)description price:(int) price;
 -(void)deleteProduct:(int) id_Product;
 -(void)modifyProduct:(int) id_Product name:(NSString*) name description:(NSString*)description price:(int) price;
 

@@ -23,8 +23,18 @@
     return inst;
 }
 //////////////////////////////////////////////////////////////////////
+@synthesize listProduct;
 
--(void)addProduct:(int) id_Product name:(NSString*) name description:(NSString*)description price:(int) price{
+-(void)addProduct:(NSString*) name description:(NSString*)description price:(int) price{
+    Product * new_product = [[Product alloc]init];
+    
+    new_product.id_Product = listProduct.count;
+    new_product.name = name;
+    new_product.description=description;
+    new_product.price = price;
+    
+    
+    
     
 }
 -(void)deleteProduct:(int) id_Product{
