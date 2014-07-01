@@ -18,12 +18,15 @@
     @synchronized(self){
         if (!inst) {
             inst = [[self alloc] init];
+            inst.listProduct = [[NSMutableArray alloc]init];//inicializo la lista de productos
+        
         }
     }
     return inst;
 }
 //////////////////////////////////////////////////////////////////////
-@synthesize listProduct;
+@synthesize listProduct ;
+
 
 -(void)addProduct:(NSString*) name description:(NSString*)description price:(int) price{
     Product * new_product = [[Product alloc]init];
