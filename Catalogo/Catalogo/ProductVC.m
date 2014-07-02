@@ -27,6 +27,10 @@
 //////////////////////////////////////////////////////////////////////
 @synthesize listProduct ;
 
+-(void) viewDidLoad {
+     Product * new_product = [[Product alloc]init];
+    
+}
 
 -(void)addProduct:(NSString*) name description:(NSString*)description price:(int) price{
     Product * new_product = [[Product alloc]init];
@@ -58,7 +62,7 @@
 {
     //#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 5;
+    return listProduct.count;
 }
 
 
