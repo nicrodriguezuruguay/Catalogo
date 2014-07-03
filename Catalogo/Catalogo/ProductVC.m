@@ -9,7 +9,7 @@
 #import "ProductVC.h"
 #import "Product.h"
 #import "ApiVC.h"
-#import "ProductCell.h"
+#import "ProductCelda.h"
 
 @implementation ProductVC
 
@@ -32,58 +32,38 @@
 -(void) viewDidLoad {
     ApiVC * api = [ApiVC getInstance];
     listProduct = [api getAllProductsApi]; // Cargo los productos a la lista
-    
-    
 }
 
-
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    //#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    //#warning Incomplete method implementation.
-    // Return the number of rows in the section.
+-(NSInteger)collectionView:(UICollectionView*)collectionView numberOfItemsInSection:(NSInteger)section{
+    
     return listProduct.count;
 }
 
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    //ProductCell * cellProduct = [[ProductCell alloc]init] ;
-    static NSString *cellIdentifier = @"cell";
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    ProductCell * cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-
+    static NSString * cellIdentifier = @"cellProduct";
+    ProductCelda * cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
     ///// Capturo los datos de la api en estas variables ////////
     NSString * id_Product =[[listProduct valueForKey:@"id_Product"] objectAtIndex:[indexPath row]];
-    NSString * description_Product =[[listProduct valueForKey:@"description"] objectAtIndex:[indexPath row]];
     NSString * name_Product =[[listProduct valueForKey:@"name"] objectAtIndex:[indexPath row]];
     NSString * price_Product =[[listProduct valueForKey:@"price"] objectAtIndex:[indexPath row]];
     ///// Capturo los datos de la api en estas variables ////////
     
     
     ///////Coloco los datos en las labels de los botones para mostrar los productos //////////
-    [[cell button_products_1]setTag:(NSInteger)name_Product];
-    cell.text_button_1.text = name_Product;
-    cell.price_text_button_1.text=price_Product;
+    cell.label_title_collection_product.text = name_Product;
+    cell.label_price_collection_product.text=price_Product;
+    cell.button_collection_product.tag=[id_Product intValue];
     ///////Coloco los datos en las labels de los botones para mostrar los productos //////////
     
     
     //Le coloco al tag del boton el numero de id del producto para poder pasarlo como parametro
     //a la siguiente ventana que es donde muestro el producto
-    
-    
-    
-    NSString *currentValue = [[listProduct valueForKey:@"name"] objectAtIndex:[indexPath row]];
-   // [[cell textLabel]setText:currentValue];
+
     return cell;
 }
+
+
 
 
 - (IBAction)show_products:(id)sender {

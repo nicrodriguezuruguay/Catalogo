@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		107DA31519646BE100112F51 /* ApiVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 107DA31419646BE100112F51 /* ApiVC.m */; };
-		107DA31819648C2900112F51 /* ProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 107DA31719648C2900112F51 /* ProductCell.m */; };
-		109253AF196304DF00C4AEFD /* Business.m in Sources */ = {isa = PBXBuildFile; fileRef = 109253AE196304DF00C4AEFD /* Business.m */; };
 		109253B21963075E00C4AEFD /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 109253B11963075E00C4AEFD /* Product.m */; };
 		10AE1C8519633A2E00B4C209 /* ropa.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AE1C8419633A2E00B4C209 /* ropa.png */; };
+		10B0F2BC1965B5D000B01360 /* promocion.png in Resources */ = {isa = PBXBuildFile; fileRef = 10B0F2BB1965B5D000B01360 /* promocion.png */; };
+		10B0F2C21965C64000B01360 /* ProductCelda.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B0F2C11965C64000B01360 /* ProductCelda.m */; };
 		10BB03EC1961E5C2007E427A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BB03EB1961E5C2007E427A /* Foundation.framework */; };
 		10BB03EE1961E5C2007E427A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BB03ED1961E5C2007E427A /* CoreGraphics.framework */; };
 		10BB03F01961E5C2007E427A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BB03EF1961E5C2007E427A /* UIKit.framework */; };
@@ -27,7 +27,6 @@
 		10BB04101961E5C2007E427A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BB03EF1961E5C2007E427A /* UIKit.framework */; };
 		10BB04181961E5C2007E427A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 10BB04161961E5C2007E427A /* InfoPlist.strings */; };
 		10BB041A1961E5C2007E427A /* CatalogoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BB04191961E5C2007E427A /* CatalogoTests.m */; };
-		10BB042A1961E85B007E427A /* BusinessVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BB04291961E85B007E427A /* BusinessVC.m */; };
 		10BB042D1961E87E007E427A /* ProductVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BB042C1961E87E007E427A /* ProductVC.m */; };
 /* End PBXBuildFile section */
 
@@ -44,13 +43,12 @@
 /* Begin PBXFileReference section */
 		107DA31319646BE100112F51 /* ApiVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiVC.h; sourceTree = "<group>"; };
 		107DA31419646BE100112F51 /* ApiVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiVC.m; sourceTree = "<group>"; };
-		107DA31619648C2900112F51 /* ProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductCell.h; sourceTree = "<group>"; };
-		107DA31719648C2900112F51 /* ProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductCell.m; sourceTree = "<group>"; };
-		109253AD196304DF00C4AEFD /* Business.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Business.h; sourceTree = "<group>"; };
-		109253AE196304DF00C4AEFD /* Business.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Business.m; sourceTree = "<group>"; };
 		109253B01963075E00C4AEFD /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
 		109253B11963075E00C4AEFD /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
 		10AE1C8419633A2E00B4C209 /* ropa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ropa.png; sourceTree = "<group>"; };
+		10B0F2BB1965B5D000B01360 /* promocion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = promocion.png; sourceTree = "<group>"; };
+		10B0F2C01965C64000B01360 /* ProductCelda.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductCelda.h; sourceTree = "<group>"; };
+		10B0F2C11965C64000B01360 /* ProductCelda.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductCelda.m; sourceTree = "<group>"; };
 		10BB03E81961E5C2007E427A /* Catalogo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Catalogo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10BB03EB1961E5C2007E427A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		10BB03ED1961E5C2007E427A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -71,8 +69,6 @@
 		10BB04151961E5C2007E427A /* CatalogoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CatalogoTests-Info.plist"; sourceTree = "<group>"; };
 		10BB04171961E5C2007E427A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		10BB04191961E5C2007E427A /* CatalogoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatalogoTests.m; sourceTree = "<group>"; };
-		10BB04281961E85B007E427A /* BusinessVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessVC.h; sourceTree = "<group>"; };
-		10BB04291961E85B007E427A /* BusinessVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessVC.m; sourceTree = "<group>"; };
 		10BB042B1961E87E007E427A /* ProductVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductVC.h; sourceTree = "<group>"; };
 		10BB042C1961E87E007E427A /* ProductVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				10AE1C8419633A2E00B4C209 /* ropa.png */,
+				10B0F2BB1965B5D000B01360 /* promocion.png */,
 			);
 			name = image;
 			sourceTree = "<group>";
@@ -153,7 +150,6 @@
 			children = (
 				107DA31219646B8200112F51 /* API */,
 				10AE1C83196339FF00B4C209 /* image */,
-				10BB04241961E80C007E427A /* Business */,
 				10BB04231961E7CD007E427A /* Product */,
 				10BB03FA1961E5C2007E427A /* AppDelegate.h */,
 				10BB03FB1961E5C2007E427A /* AppDelegate.m */,
@@ -201,23 +197,12 @@
 			children = (
 				109253B01963075E00C4AEFD /* Product.h */,
 				109253B11963075E00C4AEFD /* Product.m */,
-				107DA31619648C2900112F51 /* ProductCell.h */,
-				107DA31719648C2900112F51 /* ProductCell.m */,
 				10BB042B1961E87E007E427A /* ProductVC.h */,
 				10BB042C1961E87E007E427A /* ProductVC.m */,
+				10B0F2C01965C64000B01360 /* ProductCelda.h */,
+				10B0F2C11965C64000B01360 /* ProductCelda.m */,
 			);
 			name = Product;
-			sourceTree = "<group>";
-		};
-		10BB04241961E80C007E427A /* Business */ = {
-			isa = PBXGroup;
-			children = (
-				109253AD196304DF00C4AEFD /* Business.h */,
-				109253AE196304DF00C4AEFD /* Business.m */,
-				10BB04281961E85B007E427A /* BusinessVC.h */,
-				10BB04291961E85B007E427A /* BusinessVC.m */,
-			);
-			name = Business;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,6 +285,7 @@
 				10AE1C8519633A2E00B4C209 /* ropa.png in Resources */,
 				10BB04071961E5C2007E427A /* Images.xcassets in Resources */,
 				10BB03FF1961E5C2007E427A /* Main_iPhone.storyboard in Resources */,
+				10B0F2BC1965B5D000B01360 /* promocion.png in Resources */,
 				10BB03F61961E5C2007E427A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,12 +306,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				109253B21963075E00C4AEFD /* Product.m in Sources */,
-				10BB042A1961E85B007E427A /* BusinessVC.m in Sources */,
 				10BB042D1961E87E007E427A /* ProductVC.m in Sources */,
 				10BB04051961E5C2007E427A /* ViewController.m in Sources */,
-				109253AF196304DF00C4AEFD /* Business.m in Sources */,
-				107DA31819648C2900112F51 /* ProductCell.m in Sources */,
 				107DA31519646BE100112F51 /* ApiVC.m in Sources */,
+				10B0F2C21965C64000B01360 /* ProductCelda.m in Sources */,
 				10BB03FC1961E5C2007E427A /* AppDelegate.m in Sources */,
 				10BB03F81961E5C2007E427A /* main.m in Sources */,
 			);

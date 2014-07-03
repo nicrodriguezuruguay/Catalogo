@@ -17,6 +17,8 @@
 
 
 - (IBAction)show_products:(id)sender;
+@property (strong, nonatomic) IBOutlet UICollectionView *colletion_products;
+@property (strong, nonatomic) IBOutlet UIButton *button_colletion_products;
 
 
 
