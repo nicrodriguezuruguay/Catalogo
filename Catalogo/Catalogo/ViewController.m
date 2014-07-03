@@ -18,7 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self addDataTest];
+ 
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -30,10 +30,5 @@
     
 }
 
--(void)addDataTest {
-    ProductVC * productVC = [ProductVC getInstance];
-    [productVC addProduct:@"nombre1" description:@"description1" price:20];
-    [productVC addProduct:@"nombre2" description:@"description2" price:23];
-}
 
 @end

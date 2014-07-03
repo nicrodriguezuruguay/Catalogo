@@ -8,6 +8,8 @@
 
 #import "ProductVC.h"
 #import "Product.h"
+#import "ApiVC.h"
+#import "ProductCell.h"
 
 @implementation ProductVC
 
@@ -28,28 +30,13 @@
 @synthesize listProduct ;
 
 -(void) viewDidLoad {
-     Product * new_product = [[Product alloc]init];
+    ApiVC * api = [ApiVC getInstance];
+    listProduct = [api getAllProductsApi]; // Cargo los productos a la lista
+    
     
 }
 
--(void)addProduct:(NSString*) name description:(NSString*)description price:(int) price{
-    Product * new_product = [[Product alloc]init];
-    
-    new_product.id_Product = listProduct.count;
-    new_product.name = name;
-    new_product.description=description;
-    new_product.price = price;
-    
-    [listProduct addObject:new_product];
-    
-    
-}
--(void)deleteProduct:(int) id_Product{
-    
-}
--(void)modifyProduct:(int) id_Product name:(NSString*) name description:(NSString*)description price:(int) price{
-    
-}
+
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -68,16 +55,37 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    //ProductCell * cellProduct = [[ProductCell alloc]init] ;
     static NSString *cellIdentifier = @"cell";
-    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
-    }
     
-    //NSString *currentValue = [shareValues objectAtIndex:[indexPath row]];
-    [[cell textLabel]setText:@"hola"];
+    ProductCell * cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+
+    ///// Capturo los datos de la api en estas variables ////////
+    NSString * id_Product =[[listProduct valueForKey:@"id_Product"] objectAtIndex:[indexPath row]];
+    NSString * description_Product =[[listProduct valueForKey:@"description"] objectAtIndex:[indexPath row]];
+    NSString * name_Product =[[listProduct valueForKey:@"name"] objectAtIndex:[indexPath row]];
+    NSString * price_Product =[[listProduct valueForKey:@"price"] objectAtIndex:[indexPath row]];
+    ///// Capturo los datos de la api en estas variables ////////
+    
+    
+    ///////Coloco los datos en las labels de los botones para mostrar los productos //////////
+    [[cell button_products_1]setTag:(NSInteger)name_Product];
+    cell.text_button_1.text = name_Product;
+    cell.price_text_button_1.text=price_Product;
+    ///////Coloco los datos en las labels de los botones para mostrar los productos //////////
+    
+    
+    //Le coloco al tag del boton el numero de id del producto para poder pasarlo como parametro
+    //a la siguiente ventana que es donde muestro el producto
+    
+    
+    
+    NSString *currentValue = [[listProduct valueForKey:@"name"] objectAtIndex:[indexPath row]];
+   // [[cell textLabel]setText:currentValue];
     return cell;
 }
 
 
+- (IBAction)show_products:(id)sender {
+}
 @end

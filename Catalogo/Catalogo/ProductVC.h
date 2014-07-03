@@ -16,8 +16,8 @@
 @property (nonatomic,strong) NSMutableArray * listProduct;
 
 
--(void)addProduct:(NSString*) name description:(NSString*)description price:(int) price;
--(void)deleteProduct:(int) id_Product;
--(void)modifyProduct:(int) id_Product name:(NSString*) name description:(NSString*)description price:(int) price;
+- (IBAction)show_products:(id)sender;
+
+
 
 @end
